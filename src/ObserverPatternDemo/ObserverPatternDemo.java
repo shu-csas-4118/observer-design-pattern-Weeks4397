@@ -8,12 +8,22 @@ public class ObserverPatternDemo {
 		
 		IdNumberObserver idObserver =  new IdNumberObserver();
 		FirstNameObserver firstNameObserver = new FirstNameObserver();
+		EmailObserver emailObserver = new EmailObserver();
+		CourseObserver courseObserver = new CourseObserver();
 		
 		student.attachObserver(idObserver);
 		student.attachObserver(firstNameObserver);
+		student.attachObserver(emailObserver);
+		student.attachObserver(courseObserver);
 		
-		student.setFirstName("Garrett");
-		student.setIdNumber(54321);
+		student.addcources("2018_SPRING_CSAS4118AA Software Engineering II");
+		student.addcources("2018_SPRING_CSAS4118AA Software Engineering II");
+		student.addcources("2018_SPRING_CSAS4118AA Software Engineering II");
+		student.setFirstName("Alex");
+		student.setLastName("Weeks");
+		student.setIdNumber(543216);
+		student.setEmail("alexander.weeks@student.shu.edu");
+		
 		
 	}
 

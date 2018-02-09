@@ -1,13 +1,14 @@
 package ObserverPatternDemo;
 
 public class FirstNameObserver implements IObserver {
-	private Student student;
+	
 	
 	public FirstNameObserver() {
 		
 	}
 	
-	public void update(Student student) {		
-		System.out.println("Student's first name is " + student.getFirstName());
+	public void update(Student student, String NeedToNotify) {	
+		if(NeedToNotify.equalsIgnoreCase("firstname"))
+			System.out.println("Student's first name is " + student.getFirstName());
 	}
 }

@@ -1,5 +1,5 @@
 package ObserverPatternDemo;
 
 public interface IObserver {
-	void update(Student student);
+	void update(Student student, String NeedToNotify);
 }

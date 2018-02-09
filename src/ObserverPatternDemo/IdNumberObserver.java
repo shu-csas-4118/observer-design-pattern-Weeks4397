@@ -6,8 +6,9 @@ public class IdNumberObserver implements IObserver {
 		
 	}
 	
-	public void update(Student student) {
-		System.out.println("Student's id number is " + student.getIdNumber());
+	public void update(Student student, String NeedToNotify) {
+		if(NeedToNotify.equalsIgnoreCase("idnumber"))
+			System.out.println("Student's id number is " + student.getIdNumber());
 	}
 
 }
