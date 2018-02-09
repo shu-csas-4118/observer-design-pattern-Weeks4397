@@ -64,6 +64,11 @@ public class Student {
 		notifyAllObservers("course");
 	}
 	
+	public void removeCources(String course) {
+		this.StudentCourses.remove(course);
+		notifyAllObservers("course");
+	}
+	
 	public ArrayList<String> getcources() {
 		return this.StudentCourses;
 	}
