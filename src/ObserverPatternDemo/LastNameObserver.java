@@ -9,7 +9,7 @@ public class LastNameObserver implements IObserver {
 	
 	public void update(Student student, String NeedToNotify) {		
 		if(NeedToNotify.equalsIgnoreCase("lastname"))
-			System.out.println("Student's first name is " + student.getLastName());
+			System.out.println("Student's last name is " + student.getLastName());
 	}
 
 }
