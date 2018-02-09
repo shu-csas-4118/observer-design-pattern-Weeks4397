@@ -23,7 +23,7 @@ public class ObserverPatternDemo {
 		student.setLastName("Weeks");
 		student.setIdNumber(543216);
 		student.setEmail("alexander.weeks@student.shu.edu");
-		
+		student.removeCources("2018_SPRING_CSAS4118AA Software Engineering II");
 		
 	}
 
